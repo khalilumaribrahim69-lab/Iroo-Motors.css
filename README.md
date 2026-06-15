@@ -1,21 +1,33 @@
 # Iroo Motors
 
-## Project Description
-Iroo Motors is a luxury SUV dealership website developed using HTML and CSS. The website showcases premium vehicles, dealership services, a vehicle booking form, and a contact form.
+Iroo Motors is a luxury SUV dealership webpage created using HTML and internal CSS.
 
-## Features
-- Home Page
-- About Us Section
-- Available Cars Section
-- Services Section
-- Vehicle Booking Form
-- Contact Form
-- Luxury Dark Green Theme
-- Responsive Styling using External CSS
+## Project Features
+
+- Dark green and white old-money theme
+- Navigation menu
+- About section
+- Available cars section
+- Booking form
+- Contact form
+- Flexbox layout for navigation, car cards, and services
+- Responsive design for desktop and mobile screens
+- Media query for screens below 768px
 
 ## Technologies Used
-- HTML5
-- CSS3
 
-## Author
-Ibrahim Khalil
+- HTML
+- CSS
+- Flexbox
+- Responsive design
+
+## Responsiveness Testing
+
+The webpage was tested using browser Inspect mode on:
+
+1. Desktop screen size
+2. Mobile screen size
+
+## How to Open
+
+Open the `index.html` file in any web browser.

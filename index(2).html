@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iroo Motors</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0B1D16;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 70vh;
+            text-align: center;
+            padding: 40px 8%;
+            background:
+                linear-gradient(rgba(11, 29, 22, 0.75), rgba(11, 29, 22, 0.85)),
+                url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 56px;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #E8DCC2;
+            margin-bottom: 25px;
+        }
+
+        .hero-button {
+            background-color: #E8DCC2;
+            color: #0B1D16;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 15px;
+            background-color: #08140f;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #E8DCC2;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #E8DCC2;
+            font-size: 32px;
+        }
+
+        .about-box,
+        .services-box {
+            max-width: 900px;
+            margin: auto;
+            background-color: #123528;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .car-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .car-card {
+            background-color: #123528;
+            width: 330px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .car-card h3 {
+            color: #E8DCC2;
+            margin-bottom: 10px;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .service-item {
+            background-color: #0B1D16;
+            padding: 18px;
+            border-radius: 10px;
+            width: 220px;
+        }
+
+        form {
+            max-width: 520px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #123528;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        input, select, textarea, button {
+            padding: 13px;
+            border-radius: 6px;
+            border: none;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #E8DCC2;
+            color: #0B1D16;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #08140f;
+            color: #E8DCC2;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+
+            .car-container,
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .car-card,
+            .service-item {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>IROO MOTORS</h1>
+        <p><i>Luxury SUVs • Old Money Style • Modern Showroom</i></p>
+        <a href="#booking" class="hero-button">Book a Car</a>
+    </header>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#cars">AVAILABLE CARS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#booking">BOOKING</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Iroo Motors</h2>
+        <div class="about-box">
+            <p>
+                Iroo Motors is a luxury SUV dealership focused on providing premium vehicles,
+                excellent customer service, and a modern showroom experience. We specialize in
+                high-class SUVs such as Mercedes-Benz G-Wagons and Range Rovers.
+            </p>
+        </div>
+    </section>
+
+    <section id="cars">
+        <h2>Available Cars</h2>
+
+        <div class="car-container">
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=900&q=80" alt="Mercedes-Benz G-Wagon">
+                <h3>Mercedes-Benz G-Wagon</h3>
+                <p>A powerful luxury SUV with bold design, strong performance, and premium comfort.</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=900&q=80" alt="Range Rover">
+                <h3>Range Rover</h3>
+                <p>A stylish SUV built for elegance, comfort, off-road strength, and luxury travel.</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Luxury SUV">
+                <h3>Luxury SUV Collection</h3>
+                <p>Carefully selected premium SUVs for customers who want class and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-box">
+            <p>We offer SUV sales, vehicle booking, customer consultation, car inspection, and luxury vehicle recommendations.</p>
+
+            <div class="services-list">
+                <div class="service-item">Vehicle Sales</div>
+                <div class="service-item">Car Booking</div>
+                <div class="service-item">Inspection Support</div>
+                <div class="service-item">Customer Consultation</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Car</h2>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Car</option>
+                <option>Mercedes-Benz G-Wagon</option>
+                <option>Range Rover</option>
+                <option>Luxury SUV Collection</option>
+            </select>
+
+            <textarea placeholder="Additional Message"></textarea>
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Iroo Motors. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
