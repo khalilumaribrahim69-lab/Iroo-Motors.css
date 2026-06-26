@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iroo Motors | JavaScript Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="brand">IROO MOTORS</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#learning">Learning Outcome</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-btn" id="themeToggle">Light Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="label">Luxury SUV Showroom</p>
+                <h1>Premium SUVs with a modern old-money feel.</h1>
+                <p class="hero-text">
+                    Iroo Motors is a fictional luxury car dealership webpage created to demonstrate the application of JavaScript on a predefined webpage.
+                </p>
+                <div class="hero-actions">
+                    <a href="#cars" class="btn primary">View Cars</a>
+                    <a href="#booking" class="btn secondary">Book Inspection</a>
+                </div>
+                <p class="current-time">Current date and time: <span id="dateTime">Loading...</span></p>
+            </div>
+            <div class="hero-card">
+                <img src="assets/g-wagon.svg" alt="Luxury SUV illustration">
+                <h2>Featured SUV</h2>
+                <p>Mercedes-Benz G-Wagon</p>
+                <span>$185,000</span>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Showroom statistics">
+            <div>
+                <strong class="counter" data-target="28">0</strong>
+                <span>Available SUVs</span>
+            </div>
+            <div>
+                <strong class="counter" data-target="12">0</strong>
+                <span>Luxury Brands</span>
+            </div>
+            <div>
+                <strong class="counter" data-target="96">0</strong>
+                <span>Customer Rating</span>
+            </div>
+        </section>
+
+        <section id="cars" class="section">
+            <div class="section-title">
+                <p class="label">Available Cars</p>
+                <h2>Choose your preferred SUV</h2>
+                <p>Use the search box and buttons below. These features are powered by JavaScript.</p>
+            </div>
+
+            <div class="controls">
+                <input type="text" id="carSearch" placeholder="Search cars e.g. Range Rover">
+                <select id="budgetFilter">
+                    <option value="all">All prices</option>
+                    <option value="low">Below $150,000</option>
+                    <option value="high">$150,000 and above</option>
+                </select>
+            </div>
+
+            <div class="car-grid" id="carGrid">
+                <article class="car-card" data-name="Mercedes-Benz G-Wagon" data-price="185000">
+                    <img src="assets/g-wagon.svg" alt="Mercedes-Benz G-Wagon illustration">
+                    <div class="car-info">
+                        <h3>Mercedes-Benz G-Wagon</h3>
+                        <p>Strong luxury SUV with bold design and premium comfort.</p>
+                        <strong>$185,000</strong>
+                        <button class="details-btn" data-car="Mercedes-Benz G-Wagon">View Details</button>
+                    </div>
+                </article>
+
+                <article class="car-card" data-name="Range Rover Autobiography" data-price="165000">
+                    <img src="assets/range-rover.svg" alt="Range Rover Autobiography illustration">
+                    <div class="car-info">
+                        <h3>Range Rover Autobiography</h3>
+                        <p>Elegant SUV with refined interior and advanced technology.</p>
+                        <strong>$165,000</strong>
+                        <button class="details-btn" data-car="Range Rover Autobiography">View Details</button>
+                    </div>
+                </article>
+
+                <article class="car-card" data-name="Lexus LX 600" data-price="120000">
+                    <img src="assets/lexus-lx.svg" alt="Lexus LX 600 illustration">
+                    <div class="car-info">
+                        <h3>Lexus LX 600</h3>
+                        <p>Comfortable, reliable, and suitable for executive travel.</p>
+                        <strong>$120,000</strong>
+                        <button class="details-btn" data-car="Lexus LX 600">View Details</button>
+                    </div>
+                </article>
+            </div>
+            <p id="noCars" class="empty-message">No cars match your search.</p>
+        </section>
+
+        <section id="booking" class="section split-section">
+            <div>
+                <p class="label">Booking Form</p>
+                <h2>Book a car inspection</h2>
+                <p>
+                    This form uses JavaScript validation. It checks that all fields are completed correctly before showing a booking confirmation.
+                </p>
+                <div class="price-box">
+                    <label for="carSelect">Select a car to view estimated price:</label>
+                    <select id="carSelect">
+                        <option value="">Choose a car</option>
+                        <option value="185000">Mercedes-Benz G-Wagon</option>
+                        <option value="165000">Range Rover Autobiography</option>
+                        <option value="120000">Lexus LX 600</option>
+                    </select>
+                    <p id="priceOutput">Price will appear here.</p>
+                </div>
+            </div>
+
+            <form id="bookingForm" class="form-card" novalidate>
+                <h3>Inspection Booking</h3>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <small class="error" id="nameError"></small>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number">
+                <small class="error" id="phoneError"></small>
+
+                <label for="bookingCar">Car Model</label>
+                <select id="bookingCar">
+                    <option value="">Choose a car</option>
+                    <option value="Mercedes-Benz G-Wagon">Mercedes-Benz G-Wagon</option>
+                    <option value="Range Rover Autobiography">Range Rover Autobiography</option>
+                    <option value="Lexus LX 600">Lexus LX 600</option>
+                </select>
+                <small class="error" id="carError"></small>
+
+                <label for="inspectionDate">Inspection Date</label>
+                <input type="date" id="inspectionDate">
+                <small class="error" id="dateError"></small>
+
+                <button type="submit" class="btn primary full">Submit Booking</button>
+                <p class="success-message" id="bookingSuccess"></p>
+            </form>
+        </section>
+
+        <section id="learning" class="section learning-section">
+            <div class="section-title">
+                <p class="label">Learning Outcome</p>
+                <h2>JavaScript applied on this webpage</h2>
+                <p>The webpage demonstrates practical JavaScript features below.</p>
+            </div>
+            <div class="learning-grid">
+                <div>
+                    <h3>1. DOM Manipulation</h3>
+                    <p>JavaScript changes page content such as price, time, booking messages, and car details.</p>
+                </div>
+                <div>
+                    <h3>2. Form Validation</h3>
+                    <p>The booking and contact forms check user input before submission.</p>
+                </div>
+                <div>
+                    <h3>3. Event Handling</h3>
+                    <p>Buttons, search box, select menus, and forms respond to user actions.</p>
+                </div>
+                <div>
+                    <h3>4. Arrays and Objects</h3>
+                    <p>Car details are stored in JavaScript objects and displayed when needed.</p>
+                </div>
+                <div>
+                    <h3>5. Local Storage</h3>
+                    <p>The selected theme and latest booking reference are saved in the browser.</p>
+                </div>
+                <div>
+                    <h3>6. Responsive Menu</h3>
+                    <p>The mobile menu opens and closes using JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section split-section contact-section">
+            <div>
+                <p class="label">Contact</p>
+                <h2>Contact Iroo Motors</h2>
+                <p>Use this form to send a message. JavaScript checks the name, email, and message before accepting it.</p>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> Wuye, Abuja, Nigeria</p>
+                    <p><strong>Email:</strong> info@iroomotors.com</p>
+                    <p><strong>Phone:</strong> +234 800 000 0000</p>
+                </div>
+            </div>
+
+            <form id="contactForm" class="form-card" novalidate>
+                <h3>Send Message</h3>
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" placeholder="Your name">
+                <small class="error" id="contactNameError"></small>
+
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" placeholder="example@email.com">
+                <small class="error" id="emailError"></small>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+                <small class="error" id="messageError"></small>
+
+                <button type="submit" class="btn primary full">Send Message</button>
+                <p class="success-message" id="contactSuccess"></p>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal" id="carModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+            <h2 id="modalTitle">Car Details</h2>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Iroo Motors. JavaScript Webpage Assignment.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
