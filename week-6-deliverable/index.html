@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iroo Motors | Luxury Car Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="brand">IROO MOTORS</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#learning">Learning Outcome</a></li>
+                <li><a href="#enquiry">Contact</a></li>
+            </ul>
+            <button class="fav-badge" id="favBadge" aria-label="View favourites">♥ <span id="favCount">0</span></button>
+            <button class="theme-btn" id="themeToggle">Light Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="label">Luxury Car Showroom</p>
+                <h1>Premium cars with a modern old-money feel.</h1>
+                <p class="hero-text">
+                    Iroo Motors is a fictional luxury car dealership webpage created to demonstrate the application of JavaScript on a predefined webpage.
+                </p>
+                <div class="hero-actions">
+                    <a href="#cars" class="btn primary">View Cars</a>
+                    <a href="#booking" class="btn secondary">Book Inspection</a>
+                </div>
+                <p class="current-time">Current date and time: <span id="dateTime">Loading...</span></p>
+            </div>
+            <div class="hero-card">
+                <img src="assets/g-wagon.svg" alt="Luxury car illustration">
+                <h2>Featured Car</h2>
+                <p>Mercedes-Benz G-Wagon</p>
+                <span>$185,000</span>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Showroom statistics">
+            <div>
+                <strong class="counter" data-target="28">0</strong>
+                <span>Available Vehicles</span>
+            </div>
+            <div>
+                <strong class="counter" data-target="12">0</strong>
+                <span>Luxury Brands</span>
+            </div>
+            <div>
+                <strong class="counter" data-target="96">0</strong>
+                <span>Customer Rating</span>
+            </div>
+        </section>
+
+        <section id="cars" class="section">
+            <div class="section-title">
+                <p class="label">Available Cars</p>
+                <h2>Choose your preferred vehicle</h2>
+                <p>Use the search box and filters below. These features are powered by JavaScript.</p>
+            </div>
+
+            <div class="controls">
+                <input type="text" id="carSearch" placeholder="Search by brand or model e.g. BMW">
+                <select id="brandFilter" aria-label="Filter by brand">
+                    <option value="all">All brands</option>
+                </select>
+                <select id="typeFilter" aria-label="Filter by vehicle type">
+                    <option value="all">All types</option>
+                </select>
+                <select id="budgetFilter" aria-label="Filter by price">
+                    <option value="all">All prices</option>
+                    <option value="low">Below $150,000</option>
+                    <option value="high">$150,000 and above</option>
+                </select>
+            </div>
+
+            <p id="resultsInfo" class="results-info" role="status"></p>
+
+            <div class="car-grid" id="carGrid"></div>
+            <p id="noCars" class="empty-message">No vehicles match your search.</p>
+        </section>
+
+        <section id="favourites" class="section favourites-section">
+            <div class="section-title">
+                <p class="label">Favourites</p>
+                <h2>Your saved vehicles</h2>
+                <p>Tap the ♥ on any vehicle to save or remove it here.</p>
+            </div>
+            <p id="favEmpty" class="empty-fav">No favourites yet. Tap the heart on a vehicle to save it.</p>
+            <div class="fav-list" id="favList"></div>
+        </section>
+
+        <section id="booking" class="section split-section">
+            <div>
+                <p class="label">Booking Form</p>
+                <h2>Book a car inspection</h2>
+                <p>
+                    This form uses JavaScript validation. It checks that all fields are completed correctly before showing a booking confirmation.
+                </p>
+                <div class="price-box">
+                    <label for="carSelect">Select a car to view estimated price:</label>
+                    <select id="carSelect">
+                        <option value="">Choose a car</option>
+                    </select>
+                    <p id="priceOutput">Price will appear here.</p>
+                </div>
+            </div>
+
+            <form id="bookingForm" class="form-card" novalidate>
+                <h3>Inspection Booking</h3>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <small class="error" id="nameError"></small>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number">
+                <small class="error" id="phoneError"></small>
+
+                <label for="bookingCar">Car Model</label>
+                <select id="bookingCar">
+                    <option value="">Choose a car</option>
+                </select>
+                <small class="error" id="carError"></small>
+
+                <label for="inspectionDate">Inspection Date</label>
+                <input type="date" id="inspectionDate">
+                <small class="error" id="dateError"></small>
+
+                <button type="submit" class="btn primary full">Submit Booking</button>
+                <p class="success-message" id="bookingSuccess"></p>
+            </form>
+        </section>
+
+        <section id="learning" class="section learning-section">
+            <div class="section-title">
+                <p class="label">Learning Outcome</p>
+                <h2>JavaScript applied on this webpage</h2>
+                <p>The webpage demonstrates practical JavaScript features below.</p>
+            </div>
+            <div class="learning-grid">
+                <div>
+                    <h3>1. DOM Selectors</h3>
+                    <p>getElementById, querySelector, and querySelectorAll select real page elements used for every feature.</p>
+                </div>
+                <div>
+                    <h3>2. DOM Manipulation</h3>
+                    <p>textContent, innerHTML, classList, and style update prices, counters, cards, and messages without reloading.</p>
+                </div>
+                <div>
+                    <h3>3. DOM Events</h3>
+                    <p>click, input, change, submit, and mouseover listeners power search, favourites, modal, and forms.</p>
+                </div>
+                <div>
+                    <h3>4. Callback Functions</h3>
+                    <p>filter, map, forEach, and setTimeout are used to process the vehicle data and update the page.</p>
+                </div>
+                <div>
+                    <h3>5. Vehicle Search &amp; Filter</h3>
+                    <p>Search by brand or model and filter by brand, price, and vehicle type.</p>
+                </div>
+                <div>
+                    <h3>6. Favourites &amp; Details</h3>
+                    <p>Save favourite vehicles and view full specifications in a details modal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enquiry" class="section split-section contact-section">
+            <div>
+                <p class="label">Enquiry</p>
+                <h2>Send a vehicle enquiry</h2>
+                <p>Use this form to ask about a vehicle. JavaScript checks the name, email, phone, vehicle, and message before accepting it.</p>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> Wuye, Abuja, Nigeria</p>
+                    <p><strong>Email:</strong> info@iroomotors.com</p>
+                    <p><strong>Phone:</strong> +234 800 000 0000</p>
+                </div>
+            </div>
+
+            <form id="enquiryForm" class="form-card" novalidate>
+                <h3>Vehicle Enquiry</h3>
+                <label for="enquiryName">Name</label>
+                <input type="text" id="enquiryName" placeholder="Your name">
+                <small class="error" id="enquiryNameError"></small>
+
+                <label for="enquiryEmail">Email</label>
+                <input type="email" id="enquiryEmail" placeholder="example@email.com">
+                <small class="error" id="enquiryEmailError"></small>
+
+                <label for="enquiryPhone">Phone</label>
+                <input type="tel" id="enquiryPhone" placeholder="Phone number">
+                <small class="error" id="enquiryPhoneError"></small>
+
+                <label for="enquiryVehicle">Vehicle</label>
+                <select id="enquiryVehicle">
+                    <option value="">Choose a vehicle</option>
+                </select>
+                <small class="error" id="enquiryVehicleError"></small>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Write your enquiry here"></textarea>
+                <small class="error" id="messageError"></small>
+
+                <button type="submit" class="btn primary full">Send Enquiry</button>
+                <p class="success-message" id="enquirySuccess"></p>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal" id="carModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Iroo Motors. JavaScript Webpage Assignment.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

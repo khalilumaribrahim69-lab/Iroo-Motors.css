@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="G-Wagon style SUV illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17382c"/>
+      <stop offset="1" stop-color="#081510"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#d6d0bf"/>
+      <stop offset="1" stop-color="#8d8776"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="760" cy="90" r="58" fill="#c8a44d" opacity="0.18"/>
+  <path d="M146 326 L176 210 Q185 174 224 166 L650 166 Q705 166 732 207 L780 281 Q806 321 774 349 L720 388 L204 388 Q167 388 146 326Z" fill="url(#body)"/>
+  <path d="M235 198 H381 V277 H208 L224 214 Q227 198 235 198Z" fill="#0d231a" opacity="0.78"/>
+  <path d="M409 198 H624 Q657 198 676 226 L708 277 H409Z" fill="#0d231a" opacity="0.78"/>
+  <path d="M188 300 H777" stroke="#2f2b22" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+  <rect x="178" y="278" width="70" height="28" rx="8" fill="#c8a44d" opacity="0.85"/>
+  <rect x="690" y="275" width="72" height="30" rx="8" fill="#f5f1e8" opacity="0.72"/>
+  <circle cx="286" cy="386" r="61" fill="#0c0c0c"/>
+  <circle cx="286" cy="386" r="31" fill="#c8a44d"/>
+  <circle cx="648" cy="386" r="61" fill="#0c0c0c"/>
+  <circle cx="648" cy="386" r="31" fill="#c8a44d"/>
+  <path d="M200 388 H735" stroke="#000" stroke-width="14" opacity="0.45"/>
+  <text x="56" y="82" fill="#f7f2e8" font-family="Arial" font-size="34" font-weight="700" letter-spacing="4">IROO MOTORS</text>
+</svg>

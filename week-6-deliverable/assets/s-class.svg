@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Mercedes-Benz S-Class style luxury sedan illustration">
+  <defs>
+    <linearGradient id="sbg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#18211f"/>
+      <stop offset="1" stop-color="#07140f"/>
+    </linearGradient>
+    <linearGradient id="sbody" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#cfd6d8"/>
+      <stop offset="1" stop-color="#7e878c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="36" fill="url(#sbg)"/>
+  <circle cx="760" cy="90" r="58" fill="#c8a44d" opacity="0.18"/>
+  <path d="M132 320 L176 228 Q196 190 246 184 L618 184 Q664 184 690 220 L758 284 Q788 314 760 342 L704 384 L220 384 Q172 384 132 320Z" fill="url(#sbody)"/>
+  <path d="M262 218 H436 V284 H240 L254 230 Q256 218 262 218Z" fill="#11191d" opacity="0.82"/>
+  <path d="M458 218 H584 Q608 218 622 238 L638 284 H458Z" fill="#11191d" opacity="0.82"/>
+  <path d="M202 300 H752" stroke="#000" stroke-width="12" stroke-linecap="round" opacity="0.4"/>
+  <rect x="198" y="278" width="66" height="26" rx="8" fill="#c8a44d" opacity="0.85"/>
+  <rect x="682" y="276" width="66" height="26" rx="8" fill="#f5f1e8" opacity="0.7"/>
+  <circle cx="282" cy="384" r="58" fill="#0c0c0c"/>
+  <circle cx="282" cy="384" r="29" fill="#c8a44d"/>
+  <circle cx="652" cy="384" r="58" fill="#0c0c0c"/>
+  <circle cx="652" cy="384" r="29" fill="#c8a44d"/>
+  <path d="M212 384 H724" stroke="#000" stroke-width="14" opacity="0.45"/>
+  <text x="56" y="82" fill="#f7f2e8" font-family="Arial" font-size="34" font-weight="700" letter-spacing="4">IROO MOTORS</text>
+</svg>

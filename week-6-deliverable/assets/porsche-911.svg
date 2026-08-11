@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Porsche 911 style coupe illustration">
+  <defs>
+    <linearGradient id="pbg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2c1414"/>
+      <stop offset="1" stop-color="#07140f"/>
+    </linearGradient>
+    <linearGradient id="pbody" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#d8504a"/>
+      <stop offset="1" stop-color="#7e1f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="36" fill="url(#pbg)"/>
+  <circle cx="760" cy="90" r="58" fill="#c8a44d" opacity="0.18"/>
+  <path d="M150 320 L172 244 Q188 204 238 196 L556 196 Q596 196 624 214 L664 246 Q710 280 742 300 Q776 320 748 344 L698 384 L232 384 Q172 384 150 320Z" fill="url(#pbody)"/>
+  <path d="M292 228 H430 V292 H270 L282 240 Q284 228 292 228Z" fill="#1c0e0e" opacity="0.85"/>
+  <path d="M452 228 H522 Q538 228 546 238 L556 292 H452Z" fill="#1c0e0e" opacity="0.85"/>
+  <path d="M204 302 H744" stroke="#000" stroke-width="12" stroke-linecap="round" opacity="0.4"/>
+  <rect x="200" y="278" width="60" height="26" rx="8" fill="#c8a44d" opacity="0.85"/>
+  <rect x="676" y="276" width="60" height="26" rx="8" fill="#f5f1e8" opacity="0.7"/>
+  <circle cx="292" cy="384" r="56" fill="#0c0c0c"/>
+  <circle cx="292" cy="384" r="28" fill="#c8a44d"/>
+  <circle cx="636" cy="384" r="56" fill="#0c0c0c"/>
+  <circle cx="636" cy="384" r="28" fill="#c8a44d"/>
+  <path d="M216 384 H718" stroke="#000" stroke-width="14" opacity="0.45"/>
+  <text x="56" y="82" fill="#f7f2e8" font-family="Arial" font-size="34" font-weight="700" letter-spacing="4">IROO MOTORS</text>
+</svg>

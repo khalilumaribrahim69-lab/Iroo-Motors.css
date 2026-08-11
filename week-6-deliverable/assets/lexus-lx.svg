@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Lexus LX style SUV illustration">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2d3b35"/>
+      <stop offset="1" stop-color="#07140f"/>
+    </linearGradient>
+    <linearGradient id="body3" x1="0" x2="1">
+      <stop offset="0" stop-color="#efeadf"/>
+      <stop offset="1" stop-color="#bbb09a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="36" fill="url(#bg3)"/>
+  <path d="M120 337 L160 254 Q180 212 230 202 L640 202 Q706 202 747 252 L795 312 Q826 350 786 378 L735 407 H188 Q138 407 120 337Z" fill="url(#body3)"/>
+  <path d="M240 229 H390 V292 H205 L220 253 Q231 229 240 229Z" fill="#0c2119" opacity="0.8"/>
+  <path d="M417 229 H635 Q673 229 704 265 L728 292 H417Z" fill="#0c2119" opacity="0.8"/>
+  <path d="M143 319 H792" stroke="#8f7130" stroke-width="8" opacity="0.68"/>
+  <path d="M144 334 L220 311 V365 H155 Q146 358 144 334Z" fill="#07140f" opacity="0.75"/>
+  <rect x="718" y="310" width="70" height="26" rx="9" fill="#c8a44d"/>
+  <circle cx="292" cy="405" r="61" fill="#050505"/>
+  <circle cx="292" cy="405" r="30" fill="#c8a44d"/>
+  <circle cx="657" cy="405" r="61" fill="#050505"/>
+  <circle cx="657" cy="405" r="30" fill="#c8a44d"/>
+  <text x="60" y="82" fill="#f7f2e8" font-family="Arial" font-size="34" font-weight="700" letter-spacing="4">LEXUS LX</text>
+</svg>

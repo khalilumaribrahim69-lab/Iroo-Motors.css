@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="BMW i7 style electric sedan illustration">
+  <defs>
+    <linearGradient id="ibg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#142a2a"/>
+      <stop offset="1" stop-color="#07140f"/>
+    </linearGradient>
+    <linearGradient id="ibody" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#eef0ef"/>
+      <stop offset="1" stop-color="#9aa3a2"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="36" fill="url(#ibg)"/>
+  <circle cx="760" cy="90" r="58" fill="#c8a44d" opacity="0.18"/>
+  <path d="M130 322 L172 226 Q192 188 244 182 L616 182 Q662 182 688 218 L756 284 Q788 314 760 342 L704 384 L222 384 Q174 384 130 322Z" fill="url(#ibody)"/>
+  <path d="M264 216 H438 V284 H242 L256 228 Q258 216 264 216Z" fill="#0f1f22" opacity="0.85"/>
+  <path d="M460 216 H586 Q612 216 626 238 L642 284 H460Z" fill="#0f1f22" opacity="0.85"/>
+  <path d="M204 300 H752" stroke="#000" stroke-width="12" stroke-linecap="round" opacity="0.4"/>
+  <rect x="200" y="278" width="66" height="26" rx="8" fill="#c8a44d" opacity="0.85"/>
+  <rect x="682" y="276" width="66" height="26" rx="8" fill="#f5f1e8" opacity="0.7"/>
+  <path d="M330 132 L318 162 L342 150 L330 182" stroke="#c8a44d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+  <circle cx="282" cy="384" r="58" fill="#0c0c0c"/>
+  <circle cx="282" cy="384" r="29" fill="#c8a44d"/>
+  <circle cx="652" cy="384" r="58" fill="#0c0c0c"/>
+  <circle cx="652" cy="384" r="29" fill="#c8a44d"/>
+  <path d="M212 384 H724" stroke="#000" stroke-width="14" opacity="0.45"/>
+  <text x="56" y="82" fill="#f7f2e8" font-family="Arial" font-size="34" font-weight="700" letter-spacing="4">IROO MOTORS</text>
+</svg>
